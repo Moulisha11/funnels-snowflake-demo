@@ -1,7 +1,7 @@
 # Funnel & Cohort demo 
 Short demo showing event funnels, cohort retention, and a simple A/B time-window readout. No real customers or PHI — this uses synthetic data and a Jupyter notebook.
 
-### What’s in this repo
+## What’s in this repo
 
 - events.csv —> synthetic event stream (user_id, event_name, event_time, treatment)
 
@@ -33,11 +33,11 @@ jupyter lab                       # open and run funnel_notebook.ipynb
 
 Running the notebook will create the PNGs used in this repo.
 
-About the Snowflake SQL
+## About the Snowflake SQL
 
 funnel_query_snowflake.sql is Snowflake-compatible SQL for building first_signup, funnel_events, and a cohort aggregation. I added the file as a ready-to-run script, but I have not executed it on a Snowflake instance. To run it in Snowflake you’ll need to: create a table for events, stage and copy the CSV, then run the SQL. The SQL uses Snowflake date functions — it’s ready to paste into the worksheet.
 
-Quick takeaways (what these files show)
+## Quick takeaways (what these files show)
 
 - funnel_counts.png —> where users drop off in the first 14 days (signup → activate → first_deposit).
 
@@ -45,7 +45,7 @@ Quick takeaways (what these files show)
 
 - ab_time_windows_pct.png —> conversion rates by treatment across time windows (0–7, 8–30, 31+ days) with basic 95% CIs.
 
-Notes
+## Notes
 
 - All data is synthetic. No PHI.
 
