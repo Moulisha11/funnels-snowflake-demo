@@ -26,7 +26,7 @@ pip install -r requirements.txt
 3. Generate the synthetic events and run the notebook:
 
 ```bash
-python make_synthetic_events.py   # writes events.csv
+python synthetic_events.py   # writes events.csv
 jupyter lab                       # open and run funnel_notebook.ipynb
 ```
 
