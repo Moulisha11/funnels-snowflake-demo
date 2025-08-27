@@ -1,7 +1,7 @@
 # Funnel & Cohort demo 
 Short demo showing event funnels, cohort retention, and a simple A/B time-window readout. No real customers or PHI — this uses synthetic data and a Jupyter notebook.
 
-What’s in this repo
+### What’s in this repo
 
 - events.csv —> synthetic event stream (user_id, event_name, event_time, treatment)
 
@@ -11,7 +11,7 @@ What’s in this repo
 
 - funnel_counts.png, cohort_retention.png, ab_time_windows_pct.png —> outputs from the notebook (generated locally).
 
-Run it locally (quick)
+## Run it locally (quick)
 
 1.Clone the repo.
 
